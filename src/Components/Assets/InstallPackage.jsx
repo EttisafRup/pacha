@@ -57,7 +57,11 @@ const HomeAbout = () => {
         <p className="m-4"></p>
         <p className="font-semibold text-xl">
           Then you're ready to go! Just follow our{" "}
-          <NavLink className="text-pink-500 underline" to="/docs">
+          <NavLink
+            onClick={() => scrollTo(0, 0)}
+            className="text-pink-500 underline"
+            to="/docs"
+          >
             documentations
           </NavLink>{" "}
           and start your projects today!
